@@ -72,3 +72,5 @@ output "ssm_parameter_tags_all" {
   description = "All tags used for the parameter"
   value       = try(aws_ssm_parameter.this[0].tags_all, aws_ssm_parameter.ignore_value[0].tags_all, null)
 }
+
+
